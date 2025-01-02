@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Course Title -->
+        <TextView
+            android:id="@+id/courseTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:text="Course Title"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Course Image -->
+        <ImageView
+            android:id="@+id/courseImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Course Description -->
+        <TextView
+            android:id="@+id/courseDescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description: This is the course description."
+            android:textSize="16sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Course Instructor -->
+        <TextView
+            android:id="@+id/courseInstructorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instructor: Dr. John Doe"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <!-- Course Duration -->
+        <TextView
+            android:id="@+id/courseDurationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duration: 4 weeks"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <!-- Course Tags -->
+        <TextView
+            android:id="@+id/courseTagsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tags: Programming, Development"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <!-- Course Content -->
+        <TextView
+            android:id="@+id/courseContentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Topics: Basics of Java, OOP Principles"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <!-- Course Status -->
+        <TextView
+            android:id="@+id/courseStatusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Active"
+            android:textSize="16sp"
+            android:fontStyle="italic"
+            android:textColor="@android:color/holo_green_dark"
+            android:paddingBottom="16dp" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:progressDrawable="@android:drawable/progress_horizontal"
+            style="?android:attr/progressBarStyleHorizontal" /> <!-- Use horizontal progress bar -->
+
+
+        <!-- Buttons Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Enroll in Course Button -->
+            <Button
+                android:id="@+id/enrollCourseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enroll in Course"
+                android:layout_marginEnd="16dp" />
+
+            <!-- Edit Course Button -->
+<!--            <Button-->
+<!--                android:id="@+id/editCourseButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Edit Course" />-->
+        </LinearLayout>
+
+        <!-- RecyclerView for Lectures -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewLectures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+
+
+</ScrollView>

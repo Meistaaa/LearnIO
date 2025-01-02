@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "757490980896",
+    "project_id": "learnio-5d515",
+    "storage_bucket": "learnio-5d515.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757490980896:android:3609c55c80a1f1d6dbc445",
+        "android_client_info": {
+          "package_name": "com.shazycode.learnio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDliH3WOOvHEDqSK7mIMqNsEjmfHRVUUP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
